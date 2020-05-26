@@ -2,15 +2,15 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import Sidebar from '../components/Sidebar';
-import Search from '../components/Search';
+import Notes from '../components/Notes';
 
 import '../stylesheets/main.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className='App flex h-screen'>
+    <div className='flex h-screen subpixel-antialiased'>
       <Sidebar />
-      <Search />
+      <Notes />
     </div>
   );
 }
