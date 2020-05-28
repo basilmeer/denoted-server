@@ -13,20 +13,20 @@ const Notes = () => (
       <a href='#' className='note flex text-sm'>
         Getting good at video games
         <div className='tags mt-2'>
-          <a href='/tags' className='tag'>video-games</a>
+          <span className='tag'>video-games</span>
         </div>
       </a>
       <a href='#' className='note flex text-sm'>
         What is love?
         <div className='tags mt-2'>
-          <a href='/tags' className='tag'>music</a>
+          <span className='tag'>music</span>
         </div>
       </a>
       <a href='#' className='note flex text-sm active'>
         Snippet note example
         <div className='tags mt-2'>
-          <a href='/tags' className='tag'>help</a>
-          <a href='/tags' className='tag'>starting</a>
+          <span className='tag'>help</span>
+          <span className='tag'>starting</span>
         </div>
       </a>
       <a href='#' className='note flex text-sm'>

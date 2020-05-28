@@ -7,16 +7,18 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 
+@import './ckeditor_overrides.scss';
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
 .notes {
-  width: 250px;
+  min-width: 250px;
 }
 
 .sidebar {
-  width: 220px;
+  min-width: 220px;
   &-navigation {
     font-size: 14px;
 
@@ -98,5 +100,40 @@ body {
     &::before {
       content: '#';
     }
+  }
+}
+
+.editor {
+  &-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+  }
+
+  &-list {
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+  &-hr {
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+
+  &-blockquote {
+    display: inline-block;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+    color: #aaa;
+    font-style: italic;
+  }
+
+  &-code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 3px;
   }
 }
