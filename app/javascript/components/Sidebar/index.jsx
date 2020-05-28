@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import Categories from './Categories';
 
 const Sidebar = () => (
-  <div className='sidebar text-white max-w-md flex flex-col p-5 bg-gray-900'>
+  <div className='sidebar max-w-md flex flex-col p-5 bg-gray-100 border-r border-gray-300'>
     <Navigation />
     <Categories />
   </div>

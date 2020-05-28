@@ -7,17 +7,133 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 
+@import './ckeditor_overrides.scss';
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
-.search {
-  width: 250px;
+.notes {
+  min-width: 250px;
 }
 
 .sidebar {
-  width: 220px;
+  min-width: 220px;
   &-navigation {
     font-size: 14px;
+
+    a {
+      @apply flex;
+      @apply items-center;
+      @apply py-1;
+      @apply text-gray-600;
+      @apply font-medium;
+      @apply transition;
+      @apply duration-200;
+      @apply ease-in-out;
+
+      &:hover {
+        @apply text-gray-800;
+      }
+    }
+  }
+}
+
+.notes {
+  &-list {
+    .note {
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      @apply p-4;
+      @apply text-gray-600;
+      @apply transition;
+      @apply duration-200;
+      @apply ease-in-out;
+
+      &.active {
+        @apply bg-gray-300;
+        @apply border-t;
+        @apply border-b;
+        @apply border-gray-400;
+        @apply text-black;
+
+        &:hover {
+          @apply bg-gray-400;
+          @apply bg-opacity-75;
+        }
+      }
+
+      &:hover:not(.active) {
+        @apply bg-gray-200;
+        @apply text-gray-800;
+      }
+    }
+  }
+}
+
+.tags {
+  .tag {
+    margin-right: 5px;
+
+    @apply text-xs;
+    @apply bg-white;
+    @apply shadow-sm;
+    @apply font-medium;
+    @apply py-1;
+    @apply px-2;
+    @apply rounded-full;
+    @apply align-middle;
+    @apply transition;
+    @apply duration-200;
+    @apply ease-in-out;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      @apply shadow-lg;
+      @apply text-blue-800;
+    }
+
+    &::before {
+      content: '#';
+    }
+  }
+}
+
+.editor {
+  &-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+  }
+
+  &-list {
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+  &-hr {
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+
+  &-blockquote {
+    display: inline-block;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+    color: #aaa;
+    font-style: italic;
+  }
+
+  &-code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 3px;
   }
 }
