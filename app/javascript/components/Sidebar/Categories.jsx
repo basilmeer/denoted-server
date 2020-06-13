@@ -11,7 +11,7 @@ const Categories = () => (
     <div className='sidebar-navigation'>
       <a
         href='#'
-        className='flex items-center py-1 hover:text-black font-medium text-gray-600 transition duration-200 ease-in-out'>
+        className='sidebar-item'>
         <span className="w-2 h-2 bg-green-400 rounded-full"></span>
         <span className='ml-3 mr-auto'>Default</span>
         <span className='count'>12</span>
@@ -19,7 +19,7 @@ const Categories = () => (
 
       <a
         href='#'
-        className='flex items-center py-1 hover:text-black font-medium text-gray-600 transition duration-200 ease-in-out'>
+        className='sidebar-item'>
         <span className="w-2 h-2 bg-red-400 rounded-full"></span>
         <span className='ml-3 mr-auto'>Notes</span>
         <span className='count'>10</span>
@@ -27,7 +27,7 @@ const Categories = () => (
 
       <a
         href='#'
-        className='flex items-center py-1 hover:text-black font-medium text-gray-600 transition duration-200 ease-in-out'>
+        className='sidebar-item'>
         <span className="w-2 h-2 bg-indigo-400 rounded-full"></span>
         <span className='ml-3 mr-auto'>Todos</span>
         <span className='count'>4</span>
@@ -35,7 +35,7 @@ const Categories = () => (
 
       <a
         href='#'
-        className='flex items-center py-1 hover:text-black font-medium text-gray-600 transition duration-200 ease-in-out'>
+        className='sidebar-item'>
         <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
         <span className='ml-3 mr-auto'>Ideas</span>
         <span className='count'>24</span>

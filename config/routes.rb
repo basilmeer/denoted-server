@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'home#index'
 
-  authenticated :user do
-    resource :notes, only: %w[new] do
-      post :new
-    end
+  resource :notes, only: %w[update] do
+    get :index
+    post :new
   end
 end
