@@ -7,7 +7,7 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 
-@import './ckeditor_overrides.scss';
+// @import './ckeditor_overrides.scss';
 
 body {
   font-family: 'Inter', sans-serif;
@@ -88,6 +88,11 @@ body {
     @apply duration-200;
     @apply ease-in-out;
 
+    .close {
+      margin-left: 5px;
+      @apply text-gray-500;
+    }
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -95,6 +100,11 @@ body {
     &:hover {
       @apply shadow-lg;
       @apply text-blue-800;
+
+      .close {
+        margin-left: 5px;
+        @apply text-blue-600;
+      }
     }
 
     &::before {
@@ -135,5 +145,25 @@ body {
     font-family: monospace;
     background-color: #eee;
     padding: 3px;
+  }
+}
+
+.ck-editor__editable {
+  min-height: 350px !important;
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+}
+
+.tags-container {
+  .tag {
+    &:hover {
+      @apply shadow-none;
+    }
   }
 }

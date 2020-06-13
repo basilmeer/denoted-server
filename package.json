@@ -4,6 +4,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
     "@ckeditor/ckeditor5-build-classic": "^19.0.1",
+    "@ckeditor/ckeditor5-build-inline": "^19.0.1",
     "@ckeditor/ckeditor5-react": "^2.1.0",
     "@ckeditor/ckeditor5-word-count": "^19.0.1",
     "@fortawesome/fontawesome-free": "^5.13.0",
