@@ -10,11 +10,10 @@
 
   /* -- Overrides generic colors. ------------------------------------------------------------- */
 
-  --ck-color-base-foreground: var(--ck-custom-background);
-  --ck-color-base-border: hsla(214, 30%, 91%, 0.062);
+  --ck-color-base-border: hsl(214, 30%, 91%);
   --ck-color-focus-border: hsl(211, 25%, 84%);
   --ck-color-shadow-drop: hsla(0, 0%, 0%, 0);
-  --ck-color-shadow-inner: hsla(0, 0%, 0%, 0);
+  --ck-color-shadow-inner: rgba(0, 0, 0, 0.05);
 
   /* -- Overrides the default .ck-button class colors. ---------------------------------------- */
 
@@ -56,7 +55,6 @@
   /* -- Overrides the default .ck-toolbar class colors. --------------------------------------- */
 
   --ck-color-toolbar-background: var(--ck-custom-background);
-  --ck-color-toolbar-border: var(--ck-custom-border);
 
   /* -- Overrides the default .ck-tooltip class colors. --------------------------------------- */
 

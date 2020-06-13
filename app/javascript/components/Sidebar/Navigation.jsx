@@ -23,6 +23,12 @@ const Navigation = () => (
       </a>
       <a
         href='#'>
+        <i className='far fa-edit'></i>
+        <span className='ml-3 mr-auto'>Drafts</span>
+        <span className='count'>0</span>
+      </a>
+      <a
+        href='#'>
         <i className='fas fa-trash'></i>
         <span className='ml-3 mr-auto'>Trash</span>
         <span className='count'>0</span>
