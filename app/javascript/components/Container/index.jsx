@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { render } from 'react-dom';
 import CKEditor from '@ckeditor/ckeditor5-react';
 import '@ckeditor/ckeditor5-build-inline';
 import axios from 'axios';
 
-import Sidebar from '../components/Sidebar';
-import Notes from '../components/Notes';
-import '../stylesheets/main.scss';
+import Sidebar from '../Sidebar';
+import Notes from '../Notes';
 
-const App = () => {
+const Container = () => {
   const [notes, setNotes] = useState([]);
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
@@ -105,7 +103,6 @@ const App = () => {
         t.tags = tags;
       }
     });
-    debugger;
     setNotes(tempNotes);
   }
 
@@ -162,9 +159,4 @@ const App = () => {
   );
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  render(
-    <App />,
-    document.getElementById('root'),
-  );
-})
+export default Container;
