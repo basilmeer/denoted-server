@@ -6,7 +6,6 @@ import axios from 'axios';
 
 import Sidebar from '../components/Sidebar';
 import Notes from '../components/Notes';
-import '../stylesheets/main.scss';
 
 const App = () => {
   const [notes, setNotes] = useState([]);
