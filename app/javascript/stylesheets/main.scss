@@ -42,6 +42,36 @@ button {
   }
 }
 
+.categories {
+  @apply mt-8;
+
+  &-heading {
+    position: relative;
+    @apply mb-4;
+
+    h5 {
+      @apply text-gray-500;
+      @apply uppercase;
+      @apply tracking-wide;
+      @apply font-bold;
+      @apply text-sm;
+      @apply flex;
+      @apply opacity-75;
+    }
+
+    a {
+      @apply ml-auto;
+      @apply transition;
+      @apply duration-200;
+      @apply ease-in-out;
+
+      &:hover {
+        @apply text-gray-700;
+      }
+    }
+  }
+}
+
 .notes {
   &-list {
     height: calc(100vh - 120px);
@@ -108,6 +138,27 @@ button {
     @apply rounded;
     @apply text-sm;
 
+    &:hover {
+      @apply bg-green-600;
+    }
+  }
+}
+
+.btn {
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
+
+  &-sm {
+    @apply py-1;
+    @apply px-3;
+    @apply text-xs;
+  }
+
+  &-green {
+    @apply bg-green-500;
+    @apply text-white;
+    
     &:hover {
       @apply bg-green-600;
     }
