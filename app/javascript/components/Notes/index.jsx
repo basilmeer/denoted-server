@@ -4,12 +4,12 @@ import axios from 'axios';
 const Notes = ({ notes, setNotes, showNote, activeNoteId, isSaving, cleanInputFields }) => {
   useEffect(() => {
     axios.get('/notes')
-    .then((res) => {
-      setNotes(res.data.notes);
-    })
-    .catch((err) => {
-      console.log(err);
-    })
+      .then((res) => {
+        setNotes(res.data.notes);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
   }, [isSaving]);
 
   return (
@@ -37,7 +37,7 @@ const Notes = ({ notes, setNotes, showNote, activeNoteId, isSaving, cleanInputFi
           ))
         }
       </div>
-      <button class='new-note-btn' onClick={cleanInputFields}>
+      <button className='new-note-btn' onClick={cleanInputFields}>
         <i className='fas fa-plus mr-1'></i>
         New Note
       </button>

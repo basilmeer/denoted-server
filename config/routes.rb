@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resource :notes, only: %w[update] do
     get :index
-    post :new
+    post :save
   end
+
+  resources :categories, only: %i[index create]
 end
