@@ -1,24 +1,15 @@
-# README
+# Denoted - Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend for Denoted.
 
-Things you may want to cover:
+## `rails server -p 4000`
 
-* Ruby version
+Fires up the server at port 4000 'cause' we didn't change React's port from 3000.
 
-* System dependencies
+# Todo
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [ ] Write mutations for saving/updating/deleting notes
+- [ ] Ability to Star/Pin notes
+- [ ] Ability to soft-deletion to Notes
+- [ ] Ability to add more Categories (user can also choose what color to give it)
+- [ ] Add test cases
