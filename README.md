@@ -1,6 +1,6 @@
 # Denoted - Server
 
-Backend for Denoted.
+Backend for Denoted. Active work is going on in `revamp` branch.
 
 ## `rails server -p 4000`
 
